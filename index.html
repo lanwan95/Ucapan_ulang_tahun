@@ -94,6 +94,11 @@
                 }
             })
         }
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); // Mencegah menu klik kanan muncul
+            alert('Klik kanan telah dinonaktifkan di halaman ini.');
+        });
     </script>
 
 </body>
